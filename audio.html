@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <style>
+        #play{
+            color: green;
+            background-color: #fff;
+            border: 1px solid #fff;
+        }
+        #stop{
+            color: red;
+            background-color: #fff;
+            border: none;
+            outline: none;
+        }#audiobutton{
+            width: 50%;
+
+        }
+        #timerang{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <audio src="../../audio/audio.m4a" id="audio"   ></audio>
+        <div id="audiobutton">
+            <button   id="play"><i class="fa fa-play fa-2x"></i></button>
+            <button  id="stop"><i class="fa fa-stop fa-2x" ></i></button>
+            <input type="range" id="timerang" min="0"max="100%" value="0" step="0,2">
+            <span id="showtimespan">00:00</span>
+
+        </div>
+    </div>
+    <script src="audio.js"></script>
+</body>
+</html>
